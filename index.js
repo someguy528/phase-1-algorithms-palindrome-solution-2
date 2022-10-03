@@ -1,9 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for (let i=0; i<word.length/2;i++){
+    if (word[i] !== word[word.length-1-i]) {
+      return false
+    }
+  } return true
 }
 
 /* 
   Add your pseudocode here
+  itterate over word
+  detect if first index is identical to last, if not return false
+  continue itterating and reach the middle to return true if test pass
 */
 
 /*
